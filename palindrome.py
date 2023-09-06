@@ -14,7 +14,7 @@ def highestValuePalindrome(s: str, n: int, k: int) -> str:
     :return: a string, which is the highest value palindrome that can be obtained by changing at most k
     characters in the input string s.
     
-    # Tests:
+    ## Tests:
     >>> highestValuePalindrome("1231", 4, 3)
     '9339'
 
