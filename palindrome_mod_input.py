@@ -1,3 +1,6 @@
+import doctest
+import sys
+
 def highestValuePalindrome(s: str, n: int, k: int) -> str:
     """
     The function takes a string `s`, its length `n`, and the maximum number of
@@ -77,13 +80,20 @@ def highestValuePalindrome(s: str, n: int, k: int) -> str:
     # Step 6: Convert the list of characters back to a string and return
     return "".join(s)
 
-if __name__ == '__main__':
-    first_line_input = input().rstrip().split()
 
-    n = int(first_line_input[0])
+if __name__ == "__main__":
+    try:
+        s = input("Please enter a string representation of an integer (e.g., '12345'): ")
+        n = int(input("Please enter the length of the string (1 or greater): "))
+        k = int(input("Please enter the maximum number of changes allowed (0 or greater): "))
+    except ValueError:
+        print("\nInvalid input. Please enter valid integers for n and k.")
+        sys.exit(1)
 
-    k = int(first_line_input[1])
-
-    s = input()
-
-    print(highestValuePalindrome(s, n, k))
+    result = highestValuePalindrome(s, n, k)
+    print(f"\nHighest Value Palindrome: {result} \n")
+    
+    # Run doctests and display test results
+    print("Running Tests")
+    doctest.testmod()
+    print("Tests Completed")
