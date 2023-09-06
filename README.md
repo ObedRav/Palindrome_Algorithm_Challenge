@@ -28,10 +28,7 @@ To run the "Highest Value Palindrome" program, follow these simple steps:
      python3 palindrome.py
      ```
 
-5. **Input**:
-   - Follow the on-screen prompts to input the string, its length, and the maximum number of allowed changes.
-
-6. **Output**:
+5. **Output**:
    - The program will calculate and display the highest value palindrome based on your inputs.
 
 ## Example Usage 📝
@@ -62,14 +59,9 @@ The program includes input validation to ensure that:
 Here's an example of input validation in action:
 
 ```plaintext
-Please enter a string representation of an integer (e.g., '12345'): 1
-Please enter the length of the string (1 or greater): 1
-Please enter the maximum number of changes allowed (0 or greater): -2
-
-Highest Value Palindrome: Invalid input: n should be at least 1, and k should be non-negative.
-
-Running Tests
-Tests Completed
+4 1
+0011
+-1
 ```
 
 The program will reject invalid input and provide an informative error message.
