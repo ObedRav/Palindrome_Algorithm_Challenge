@@ -56,7 +56,7 @@ The program includes input validation to ensure that:
 - The length `n` of the string is at least 1.
 - The maximum number of changes allowed `k` is non-negative.
 
-Here's an example of input validation in action:
+This is an example of input:
 
 ```plaintext
 4 1
